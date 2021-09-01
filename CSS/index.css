@@ -152,9 +152,8 @@ nav{
 
 .slide-control {
 	position: absolute;
-	left: 30px;
-	top: 50%;
-	width: 10px;
+	left: 48%;
+	top: 95%;
 	text-align: center;
 }
 
@@ -164,7 +163,7 @@ nav{
 
 .dot.active {
 	background-color: var(--red);
-	height: 60px;
+	height: 10px;
 }
 
 /* fade animation */

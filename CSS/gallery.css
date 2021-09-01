@@ -1,0 +1,284 @@
+:root {
+	--red: #ff3838;
+	--white: #ffffff;
+	--black: #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body, html {
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	height: 100%;
+}
+nav{
+	background-color:black;
+}
+.navbar {
+	background-color:black;
+	padding: 10px 10px;
+	padding-right: 30px;
+	padding-left: 80px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 1566px;
+	z-index: 99;
+}
+
+.navbar a {
+	float: left;
+	color: var(--white);
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 19px;
+	font-weight: bold;
+	line-height: 25px;
+	padding: 13px;;
+}
+.fa-home
+{
+	font-size: 40px;
+}
+.navbar .logo {
+	margin-top: -10px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-right a:hover {
+	color: var(--red);
+}
+
+.navbar-right a.active {
+	color: var(--red);
+}
+
+.navbar-right a {
+	transition: color 0.5s ease;
+}
+
+.navbar-right {
+	float: right;
+}
+
+.navbar .icon {
+	font-size: 25px;
+	display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+	.navbar {
+		padding: 10px;
+	}
+	
+	.navbar .menu {
+		display: none;
+	}
+
+	.navbar .icon {
+		display: block;
+		position: absolute;
+		top: 12px;
+		right: 13px;
+	}
+
+	.navbar.show {
+		background: var(--black);
+	}
+
+	.navbar.show .menu {
+		display: block;
+		width: 100%;
+	}
+
+	.navbar.show .menu a {
+		width: 100%;
+	}
+
+
+}
+h1{
+    font-family: "Lucida Handwriting";
+    font-size: 50px;
+    margin-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container-fluid {
+	position: relative;
+	/*width: 80%;*/
+	column-count: 4;
+	margin: -10px auto;
+	padding: 20px;
+}
+
+.grid-item  {
+	display: inline-block;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+img
+{
+	width: 100%;
+	transition: 0.25s ease-in-out;
+}
+.grid-item img:hover{
+	transform: scale(1.1);
+}
+.grid-item:hover h1
+{
+	opacity: 0.5;
+}
+
+@media  screen and (max-width:1024px) {
+	h1
+	{
+		font-size: 20px;
+	}
+}
+
+@media  screen and (max-width: 768px) {
+	.container-fluid {
+		column-count: 3;
+	}
+}
+	
+@media  screen and (max-width: 425px) {
+	.container-fluid {
+		column-count: 2;
+	}
+	h1
+	{
+		font-size: 12px;
+	}
+}
+@media  screen and (max-width: 375px) {
+	.container-fluid {
+		column-count: 1;
+	}
+	h1
+	{
+		font-size: 15px;
+	}
+}
+.footer.container {
+	max-width: 1370px;
+	margin: auto;
+}
+.footer .row {
+	display: flex;
+	flex-wrap: wrap;
+    margin-left: 50px;
+}
+.footer ul {
+	list-style: none;
+}
+.footer {
+	background-color: #24262b;
+	padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+.footer-col {
+	width: 21%;
+	padding: 0px 25px;
+}
+.footer-col h4{
+	font-size: 22px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+    margin-left: 50px;
+}
+.footer-col h4::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color:red;
+	height: 2px;
+	box-sizing: border-box;	
+	width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+.footer-col ul li a {
+	font-size: 20px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+    margin-left:10px;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin: 0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+	color:white;	
+	background-color: red;
+}
+/*responsive*/
+@media(max-width: 767px){
+	.footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+}
+.footer-col ul li a {
+	margin-left:-50px;
+}
+.footer-col ul li .tt {
+	margin-left:-50px;
+}
+.footer-col h4 {
+	margin-left:-10px;
+}
+.footer .row {
+	display: flex;
+	flex-wrap: wrap;
+    margin-left: 0px;
+}
+}
+@media(max-width: 574px){
+	.footer-col {
+    width: 100%;
+}
+}
+.copyright {
+	text-align:center;
+  	font-size:20px;
+	  padding: 10px;
+	  background:rgba(0,0,0,0.8);
+ 	 color:white;
+ 	 margin-top:0px;
+}
+.tt {
+    font-size: 20px;
+	color: #bbbbbb;
+    margin-left: 10px;
+}
+
+
