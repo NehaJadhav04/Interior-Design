@@ -11,18 +11,22 @@
 	transition:all .2s linear;
 	text-transform: capitalize;
   }
-  
-  
+    
 body, html {
 	font-family: 'Ubuntu', sans-serif;
 	margin: 0;
 	height: 100%;
 }
+.heading1
+{
+	font-size: 50px;
+	text-align: center;
+}
 .heading
 {
-	margin-top: 100px;
+	font-size: 50px;
 	text-align: center;
-	margin-bottom:0px;
+	padding: 50px;
 }
 nav{
 	background-color:black;
@@ -123,6 +127,7 @@ nav{
 
 }
 .about{
+	margin-top: 120px;
 	min-height: 100vh;
 	padding-bottom: 3rem;
   }
@@ -346,7 +351,7 @@ nav{
   }
   
   .team-section{
-	  margin-top: -150px;
+	  margin-top: -50px;
 	min-height: 100vh;
 	padding:70px 15px 30px;
 }
@@ -357,7 +362,7 @@ nav{
 }
 
 .team-section .row{
-	margin-top: 30px;
+	margin-top: 50px;
 	display: flex;
 	flex-wrap: wrap;
 }
