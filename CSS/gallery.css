@@ -11,6 +11,13 @@ body, html {
 	margin: 0;
 	height: 100%;
 }
+.border{
+	width: 160px;
+	height: 5px;
+	background:red;
+	margin:-25px auto;
+	margin-bottom:20px;
+  }
 nav{
 	background-color:black;
 }
@@ -103,11 +110,12 @@ nav{
 
 
 }
-h1{
+.heading{
     font-size: 50px;
     margin-top: 120px;
     text-align: center;
     text-transform: uppercase;
+	margin-bottom: 50px;
 }
 .container-fluid {
 	position: relative;
@@ -116,7 +124,6 @@ h1{
 	margin: -10px auto;
 	padding: 20px;
 }
-
 .grid-item  {
 	display: inline-block;
 	margin-bottom: 10px;

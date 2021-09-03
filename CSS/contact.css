@@ -16,6 +16,14 @@ body{
 nav{
 	background-color:black;
 }
+.border{
+	width: 160px;
+	height: 5px;
+	background:red;
+	margin:50px auto;
+	margin-bottom:10px;
+  }
+
 .navbar {
 	background-color:black;
 	padding: 10px 10px;

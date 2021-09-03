@@ -20,6 +20,7 @@ body, html {
 .heading1
 {
 	font-size: 50px;
+	margin-bottom: 50px;
 	text-align: center;
 }
 .heading
@@ -28,6 +29,13 @@ body, html {
 	text-align: center;
 	padding: 50px;
 }
+.border{
+	width: 160px;
+	height: 5px;
+	background:red;
+	margin:-25px auto;
+	margin-bottom:20px;
+  }
 nav{
 	background-color:black;
 }
@@ -127,11 +135,14 @@ nav{
 
 }
 .about{
-	margin-top: 120px;
+	margin-top: 100px;
 	min-height: 100vh;
 	padding-bottom: 3rem;
   }
-  
+  .about .row
+  {
+	  margin-top: -60px;
+  }
   .about .image{
 	padding:2rem;
   }
