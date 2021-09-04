@@ -9,8 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script> 
-   <link rel="stylesheet" type="text/css" href="CSS/aboutus.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" type="text/css" href="CSS/aboutus.css">
 </head>
 <body>
 <nav>
@@ -45,7 +46,7 @@
 
   <h1 class="heading1">ABOUT US</h1>
   <div class="border"></div>
-  <div class="row align-items-center">
+  <div class="row align-items-center" data-aos="zoom-in-up">
   
     <div class="col-md-6 info">
       <h3>‘Home Decor’ is a boutique design firm, involved exceptionally qualified designers that work
@@ -63,28 +64,28 @@
     </div>
   
     <div class="col-md-6 image">
-      <img src="images/aboutus.png" width="90%" alt="">
+      <img src="C:\Users\kalyani\Downloads\about2.png" width="90%" alt="">
   </div>
   </div>
   </section>
   <div class="counter-up">
     <div class="content">
-      <div class="box">
+      <div class="box" data-aos="fade-up-right">
         <div class="icon"><i class="fas fa-history"></i></div>
         <div class="counter" data-count="724">724</div>
         <div class="text">Working Hours</div>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up-right">
         <div class="icon"><i class="fas fa-gift"></i></div>
         <div class="counter" data-count="508">508</div>
         <div class="text">Completed Projects</div>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up-left">
         <div class="icon"><i class="fas fa-users"></i></div>
         <div class="counter" data-count="436">436</div>
         <div class="text">Happy Clients</div>
       </div>
-      <div class="box">
+      <div class="box" data-aos="fade-up-left">
         <div class="icon"><i class="fas fa-award"></i></div>
         <div class="counter" data-count="12">12</div>
         <div class="text">Awards Received</div>
@@ -124,55 +125,102 @@
     </section>
     <h1 class="heading">OUR THINKING</h1>
     <div class="border"></div>
-    <div class="testimonials">
-      <div class="inner-1">
-        <div class="row-1">
-          <div class="col">
-            <div class="testimonial">
-              <img src="images/vision.jpg" alt="">
-              <div class="name">VISION</div>
-              <p>Our Vision is to shape spaces with “timeless designs” and want to 
-                be a globally recognized professional interior design company, 
-                providing solutions in the field of high-end corporate, commercial & 
-                residential interiors.</p><br>
-            </div>
+    <section class="team-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-4"  data-aos="fade-in">
+            <div class="team-single">
+              <div class="content-area">
+                <div class="side-one">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="img-area">
+                        <img src="images/vision.png" alt="">
+                      </div>
+                      <h4>VISION</h4>													
+                    </div>
+                  </div>
+                </div>
+                <div class="side-two">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4>VISION</h4>
+                      <p>Our Vision is to shape spaces with “timeless designs” and want to 
+                        be a globally recognized professional interior design company, 
+                        providing solutions in the field of high-end corporate, commercial & 
+                        residential interiors. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>					
           </div>
-
-          <div class="col">
-            <div class="testimonial">
-              <img src="images/mission.jpg" alt="">
-              <div class="name">MISSION</div>
-              <p>
-                Our mission is to positively influence the lives of all customers 
-					with whom we have the pleasure of working, and leave a lasting
-					impression on their minds and imagination. Our designs must 
-					inspire and elevate the hearts and minds of all those who lay eyes on it.
-             </p>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4"  data-aos="fade-in">
+            <div class="team-single">
+              <div class="content-area">
+                <div class="side-one">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="img-area">
+                        <img src="images/mission.jpg" alt="">
+                      </div>	
+                      <h4>MISSION</h4>		
+                    </div>
+                  </div>
+                </div>
+                <div class="side-two">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4>MISSION</h4>
+                      <p>Our mission is to positively influence the lives of all customers 
+                        with whom we have the pleasure of working, and leave a lasting
+                        impression on their minds and imagination. Our designs must 
+                        inspire and elevate the hearts and minds of all those who lay eyes on it. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>					
           </div>
-
-          <div class="col">
-            <div class="testimonial">
-              <img src="images/values.jpg" alt="">
-              <div class="name">VALUES</div>
-              <p>
-                As a team, we respect one another and all indiviuals thet we come in
-                contact with. We belive that humanity and learning are essential to
-                growth. We pursue our work with honesty and sincerily. We do and say things 
-                from the heart and wish well to all those around us.
-               </p>
-            </div>
+          <div class="col-xs-12 col-sm-6 col-md-4"  data-aos="fade-in">
+            <div class="team-single">
+              <div class="content-area">
+                <div class="side-one">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="img-area">
+                        <img src="images/values.jpg" alt="">
+                      </div>
+                      <h4>VALUES</h4>													
+                    </div>
+                  </div>
+                </div>
+                <div class="side-two">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4>VALUES</h4>
+                      <p>As a team, we respect one another and all indiviuals thet we come in
+                        contact with. We belive that humanity and learning are essential to
+                        growth. We pursue our work with honesty and sincerily. We do and say things 
+                        from the heart and wish well to all those around us.
+                        </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>					
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
     <section class="team-section">
       <h1 class="heading">OUR TEAM</h1>
       <div class="border"></div>
       <div class="container">
             <div class="row">
               <div class="team-items">
-                   <div class="item">
+                   <div class="item"  data-aos="flip-left">
                        <img src="images/neha.jpeg" alt="team" />
                        <div class="inner">
                            <div class="info">
@@ -187,7 +235,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="item">
+                   <div class="item"  data-aos="flip-left">
                        <img src="images/srushti3.jpeg" alt="team" />
                        <div class="inner">
                            <div class="info">
@@ -202,7 +250,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="item">
+                   <div class="item"  data-aos="flip-left">
                        <img src="images/shruti.jpeg" alt="team" />
                        <div class="inner">
                            <div class="info">
@@ -217,7 +265,7 @@
                            </div>
                        </div>
                    </div>
-                   <div class="item">
+                   <div class="item"  data-aos="flip-left">
                        <img src="images/gauri.jpeg" alt="team" />
                        <div class="inner">
                            <div class="info">
@@ -278,8 +326,8 @@
     	</div>
     </footer>
 	<p class="copyright">Copyright © 2021 Home Decor. All Rights Reserved.</p>
-  
-<script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
 function showMenu() {
 	var topNav = document.getElementById('topnav');
 	if (topNav.className === "navbar") {
@@ -294,7 +342,10 @@ function showMenu() {
       time: 1200
     });
   });
-  
+  AOS.init({
+      offset:300,
+      duration:1000
+    });
 </script>
 
 </body>

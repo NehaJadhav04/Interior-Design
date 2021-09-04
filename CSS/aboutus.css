@@ -305,60 +305,74 @@ nav{
   .services .box-container .box:hover{
 	box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
   }
-    
-.testimonials{
-	padding: 40px 0;
-	text-align: center;
-}		
-  .inner-1{
-	max-width: 1200px;
-	margin: auto;
-	overflow: hidden;
-	padding: 0 20px;
-  }
-    .row-1{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-  }
-  .col{
-	flex: 33.33%;
-	max-width: 33.33%;
-	box-sizing: border-box;
-	padding: 15px;
-  }
-  .testimonial{
-	background:whitesmoke;
-	padding: 30px;
-  }
-  .testimonial img{
+
+  .team-area {
+	padding: 20px 0;
+}
+.team-area .card {
+	border: none;
+	background:gainsboro;
+}
+.team-area img{
+	width: 100%;
+}
+.team-area .img-area {
 	width: 150px;
 	height: 150px;
+	display: inline-block;
+	overflow: hidden;
 	border-radius: 50%;
-  }
-  .name{
-	font-size: 22px;
-	font-weight: bold;
-	margin: 20px 0;
-  } 	
-  .testimonial p
-  {
-	  color:red;
-  }
-    
-  @media screen and (max-width:960px) {
-  .col{
-	flex: 100%;
-	max-width: 80%;
-  }
-  }
-  
-  @media screen and (max-width:600px) {
-  .col{
-	flex: 100%;
-	max-width: 100%;
-  }
-  }
+	margin-bottom: 30px;
+}
+.team-single:hover .side-two {
+	transform: rotateY(0deg);
+	border-radius: 5px;
+}
+.team-single:hover .side-one {
+	transform: rotateY(180deg);
+}
+.team-area .content-area {
+	transform: perspective(1000px);
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.team-area .side-one {
+	position: relative;
+	transform: rotateY(0deg);
+	z-index: 2;
+	margin-bottom: 30px;
+}
+.team-area .side-two {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: rotateY(-180deg);
+}
+.team-area .side-one,
+.team-area .side-two {
+	backface-visibility: hidden;
+	transition: 1s;
+	transform-style: preserve-3d;
+}
+.team-area .side-one .card,
+.team-area .side-two .card {
+	min-height: 312px;	
+}
+.team-area h4 {
+	color:black;
+	font-family: bignoodletitling;
+	letter-spacing: 5px;
+	font-size: 25px;
+}
+.team-area p {
+	color: red;
+	margin-top: 10px;
+	font-size: 18px;
+	font-family: merienda;
+}
+
   .team-section{
 	margin-top: -50px;
   min-height: 100vh;
