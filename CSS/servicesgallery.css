@@ -79,7 +79,7 @@ nav{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 	.navbar {
 		padding: 10px;
 	}
@@ -198,6 +198,12 @@ p {
    padding: 15px;
     border-style: outset;
 }
+.size
+{
+	color: red;
+	font-family: Georgia, serif;
+	margin-top: 5px;
+  }
 .contact-footer{
 	margin-top: 200px;
     padding: 2rem 0;
