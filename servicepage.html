@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="CSS/servicepage.css">
+  <link rel="stylesheet" type="text/css" href="CSS/servicepage.css">
+  <link rel="stylesheet" type="text/css" href="CSS/navigation.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body>
@@ -167,19 +168,6 @@
     </footer>
 	<p class="copyright">Copyright © 2021 Home Decor. All Rights Reserved.</p>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
- <script>
-function showMenu() {
-	var topNav = document.getElementById('topnav');
-	if (topNav.className === "navbar") {
-		topNav.className += " show";
-	} else {
-		topNav.className = "navbar";
-	}
-}
-AOS.init({
-      offset:300,
-      duration:1000
-    });
-</script>
+ <script src="js/navigation.js"></script>
 </body>
 </html>

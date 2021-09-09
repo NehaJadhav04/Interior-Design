@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Contact</title>
     <link rel="shortcut icon" type="image/png" href="images/homedecor.jpg">
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/navigation.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   </head>
@@ -41,7 +41,7 @@
       </div>
       </nav>
       <h1>Contact Us</h1>
-      <div class="border"></div>
+      <div class="border1"></div>
     <section class = "contact-section">
             <div class = "contact-body">
         <div class = "contact-info">
@@ -102,20 +102,7 @@
       <p class="copyright">Copyright © 2021 Home Decor. All Rights Reserved.</p>
     </section>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      function showMenu() {
-        var topNav = document.getElementById('topnav');
-        if (topNav.className === "navbar") {
-          topNav.className += " show";
-        } else {
-          topNav.className = "navbar";
-        }
-      }
-      AOS.init({
-      offset:300,
-      duration:1000
-    });
-      </script>
+    <script src="js/navigation.js"> </script>
       
   </body>
 </html>
