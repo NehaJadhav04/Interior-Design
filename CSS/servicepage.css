@@ -17,7 +17,113 @@
         font-size: 50px;
         text-align: center;
         margin-bottom: 40px;
+    }.border{
+      width: 160px;
+      height: 5px;
+      background:red;
+      margin:-25px auto;
+      margin-bottom:20px;
+      }
+    nav{
+      background-color:black;
     }
+    .navbar {
+      background-color:black;
+      padding: 10px 10px;
+      padding-right: 30px;
+      padding-left: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      max-width: 1566px;
+      z-index: 99;
+    }
+    
+    .navbar .menu a {
+      float: left;
+      color: var(--white);
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 25px;
+      padding: 12px;
+      margin-left: 10px;
+    }
+    .fa-home
+    {
+      font-size: 40px;
+    }
+    .navbar .logo {
+        text-decoration: none;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-right: 480px;
+    }
+    
+    .navbar-right a:hover {
+      color: var(--red);
+    }
+    
+    .navbar-right a.active {
+      color: var(--red);
+    }
+    
+    .navbar-right a {
+      transition: color 0.5s ease;
+    }
+    
+    .navbar-right {
+      float: right;
+    }
+    
+    .navbar .icon {
+      font-size: 25px;
+      display: none;
+    }
+    
+    
+    @media screen and (max-width: 900px) {
+      .navbar {
+        padding: 10px;
+      }
+      
+      .navbar .menu {
+        display: none;
+      }
+      .navbar .logo {
+        margin-right: 20px;
+      }
+      
+      .navbar .icon {
+        color:white;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 13px;
+      }
+    
+      .navbar.show {
+        background: var(--black);
+      }
+    
+      .navbar.show .menu {
+        display: block;
+        width: 100%;
+      }
+    
+      .navbar.show .menu a {
+        width: 100%;
+      }
+    
+    
+    }
+    
 a {
     color: #333;
     text-decoration: none;

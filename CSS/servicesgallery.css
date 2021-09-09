@@ -145,5 +145,6 @@ h1{
     padding: 8px;
     text-align: center;
     color: #999;
-	margin-top: -1px;
+	margin-top: 1px;
+  margin-bottom: -15px;
 }

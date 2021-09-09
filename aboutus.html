@@ -13,7 +13,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
   <link rel="stylesheet" type="text/css" href="CSS/aboutus.css">
-  <link rel="stylesheet" type="text/css" href="CSS/navigation.css">
   </head>
 <body>
 <nav>
@@ -299,12 +298,14 @@
     			<div class="footer-col">
     				<h4 class="foot">SERVICES</h4>
     				<ul>
-    					<li><a href="#">Living Room</a></li>
-    					<li><a href="#">Kitchen</a></li>
-    					<li><a href="#">Bedroom</a></li>
-    					<li><a href="#">Home Office</a></li>
-    					<li><a href="#">Wardrobe</a></li>
-    					<li><a href="#">Adjustable Furniture</a></li>
+    					<li><a href="SerTVUnit.html">Living Room</a></li>
+    					<li><a href="SerKitchen.html">Kitchen</a></li>
+    					<li><a href="SerBedroom.html">Bedroom</a></li>
+    					<li><a href="SerStudyUnit.html">Study Unit</a></li>
+    					<li><a href="SerWardrobe.html">Wardrobe</a></li>
+              <li><a href="SerFoyerDesign.html">Foyer Design</a></li>
+    					<li><a href="SerBathroom.html">Bathroom</a></li>
+    					<li><a href="SerFoldable.html">Foldable Furniture</a></li>
     				</ul>
     			</div>
     			<div class="footer-col">
@@ -329,7 +330,25 @@
     </footer>
 	<p class="copyright">Copyright © 2021 Home Decor. All Rights Reserved.</p>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="js/navigation.js"></script>
-
+  <script>
+    function showMenu() {
+	var topNav = document.getElementById('topnav');
+	if (topNav.className === "navbar") {
+		topNav.className += " show";
+	} else {
+		topNav.className = "navbar";
+	}
+}
+  $(document).ready(function(){
+    $('.counter').counterUp({
+      delay: 10,
+      time: 1200
+    });
+  });
+  AOS.init({
+      offset:300,
+      duration:1000
+    });
+  </script>
 </body>
 </html>

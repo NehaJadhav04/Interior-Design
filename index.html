@@ -98,36 +98,36 @@
 <div class="container">
 <div class="box-container">
        <div class="box" data-aos="fade-up">
-           <img src="images/s1.png">
+         <a href="SerKitchen.html">
+           <img src="images/s1.png"></a>
          <div class="head1"> Kitchen </div>
-         </div>
+        </div>
          <div class="box" data-aos="fade-up">
-          <img src="images/s2.png">
+        <a href="SerTVUnit.html"><img src="images/s2.png"></a>
           <div class="head1">Living Room</div> 
       </div>  
        <div class="box" data-aos="fade-up">
-           <img src="images/s3.png">
+        <a href="SerBedroom.html"><img src="images/s3.png"></a>
           <div class="head1">Bedroom</div> 
        </div>
        <div class="box" data-aos="fade-up">
-        <img src="images/s4.png">
+        <a href="SerStudyUnit.html"><img src="images/s4.png"></a>
       <div class="head1">Study Unit</div>
       </div>
        <div class="box" data-aos="fade-up">
-           <img src="images/s5.png">
+        <a href="SerFoldable.html"><img src="images/s5.png"></a>
            <div class="head1">Furniture</div>
        </div>
        <div class="box" data-aos="fade-up">
-           <img src="images/s6.png">
+          <a href="SerFoyerDesign.html"><img src="images/s6.png"></a>
          <div class="head1">Foyer Design</div>
-            
        </div>
        <div class="box" data-aos="fade-up">
-           <img src="images/s7.png">
+        <a href="SerBathroom.html"><img src="images/s7.png"></a>
           <div class="head1">Bathroom</div> </div>
        
        <div class="box" data-aos="fade-up">
-           <img src="images/s8.png">
+        <a href="SerWardrobe.html"><img src="images/s8.png"></a>
           <div class="head1">Wardrobe</div> 
        </div>
       
@@ -200,12 +200,14 @@
       <div class="footer-col">
         <h4>SERVICES</h4>
         <ul>
-          <li><a href="#">Living Room</a></li>
-          <li><a href="#">Kitchen</a></li>
-          <li><a href="#">Bedroom</a></li>
-          <li><a href="#">Home Office</a></li>
-          <li><a href="#">Wardrobe</a></li>
-          <li><a href="#">Adjustable Furniture</a></li>
+          <li><a href="SerTVUnit.html">Living Room</a></li>
+          <li><a href="SerKitchen.html">Kitchen</a></li>
+          <li><a href="SerBedroom.html">Bedroom</a></li>
+          <li><a href="SerStudyUnit.html">Study Unit</a></li>
+          <li><a href="SerWardrobe.html">Wardrobe</a></li>
+          <li><a href="SerFoyerDesign.html">Foyer Design</a></li>
+					<li><a href="SerBathroom.html">Bathroom</a></li>
+          <li><a href="SerFoldable.html">Foldable Furniture</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -232,6 +234,66 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="js/index.js"></script>
+<script>
+  var slideIndex = 0;
+
+showSlide();
+
+// var timer = setInterval(showSlide, 2000);
+
+var slideContainer = document.getElementById('slideshow-container');
+var slideControl = document.getElementById('slide-control');
+
+slideContainer.onmouseover = function() {
+	clearInterval(timer);
+}
+
+slideControl.onmouseover = function() {
+	clearInterval(timer);
+}
+
+slideContainer.onmouseleave = function() {
+	timer = setInterval(showSlide, 2000);
+}
+
+slideControl.onmouseleave = function() {
+	timer = setInterval(showSlide, 2000);
+}
+
+function showSlide() {
+	var i;
+	var slides = document.getElementsByClassName('slide-item');
+	var dots = document.getElementsByClassName('dot');
+	for (var i = 0; i < slides.length; i++) {
+		slides[i].style.display = 'none';
+	}
+	for (var i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slideIndex++;
+	if (slideIndex > slides.length) slideIndex = 1;
+	slides[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " active";
+}
+
+function chooseSlide(n) {
+	slideIndex = n;
+	showSlide();
+	clearInterval(timer);
+}
+
+function showMenu() {
+	var topNav = document.getElementById('topnav');
+	if (topNav.className === "navbar") {
+		topNav.className += " show";
+	} else {
+		topNav.className = "navbar";
+	}
+    AOS.init({
+      offset:400,
+      duration:1000
+    });}
+
+</script>
 </body>
 </html>
