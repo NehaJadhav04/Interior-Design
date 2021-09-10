@@ -11,7 +11,11 @@
 	margin:50px auto;
 	margin-bottom:-10px;
   }
-nav{
+  body
+  {
+      font-family: Georgia;
+  }
+  nav{
 	background-color:black;
 }
 .navbar {
@@ -289,6 +293,7 @@ h1{
 .contact-footer{
     padding: 2rem 0;
     background: #000;
+    border-bottom: 1px solid white;
 }
 .contact-footer h3{
     font-size: 1.3rem;

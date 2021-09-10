@@ -48,7 +48,7 @@
   <div class="slide-item bgimg fade" style="background-image: url('images/52.jpg');">
     <div class="caption">
       <h2>BedRoom Design</h2>
-      <p>Design your bedroom with different design,lights and make it comfortablw with superior quality.
+      <p>Design your bedroom with different design,lights and make it comfortable with superior quality.
       </p>
     </div>
   </div>
@@ -63,28 +63,28 @@
  <div class="border"></div>
   <div class="container">
   <div class="box-container">
-         <div class="box " data-aos="fade-right">
+         <div class="box ">
              <span>1</span>
              <img src="images\w-1.png">
              <p id="#head1"><div class="head1">Meet Designer</div>
               Browse our catlog or contact our <br>designer for a personal Consulation </p>
          </div>
-         <div class="box " data-aos="fade-down">
+         <div class="box " >
              <span>2</span>
              <img src="images\w-2.png">
              <p id="#head1"><div class="head1">Consult</div> Discuss your requirements,<br>budget to custom-design your space. </p>
          </div>
-         <div class="box " data-aos="fade-left">
+         <div class="box " >
              <span>3</span>
              <img src="images\w-3.png">
              <p id="#head1"><div class="head1">Finalize your Order</div> After Discussion with our designer <br>finalize the design for your home. </p>
          </div>
-         <div class="box " data-aos="fade-right">
+         <div class="box " >
              <span>4</span>
              <img src="images\w-4.png">
              <p id="#head1"><div class="head1">Installation</div> Your select design will be installed<br>within 8 weeks. </p>
          </div>
-         <div class="box " data-aos="fade-left">
+         <div class="box ">
              <span>5</span>
              <img src="images\w-5.png">
              <p id="#head1"><div class="head1">Move In</div> Your  home is now ready! <br> It's time to make new memories! </p>
@@ -97,36 +97,36 @@
   <div class="border"></div>
 <div class="container">
 <div class="box-container">
-       <div class="box" data-aos="fade-up">
+       <div class="box">
          <a href="SerKitchen.html">
            <img src="images/s1.png"></a>
          <div class="head1"> Kitchen </div>
         </div>
-         <div class="box" data-aos="fade-up">
+         <div class="box">
         <a href="SerTVUnit.html"><img src="images/s2.png"></a>
           <div class="head1">Living Room</div> 
       </div>  
-       <div class="box" data-aos="fade-up">
+       <div class="box">
         <a href="SerBedroom.html"><img src="images/s3.png"></a>
           <div class="head1">Bedroom</div> 
        </div>
-       <div class="box" data-aos="fade-up">
+       <div class="box">
         <a href="SerStudyUnit.html"><img src="images/s4.png"></a>
       <div class="head1">Study Unit</div>
       </div>
-       <div class="box" data-aos="fade-up">
+       <div class="box">
         <a href="SerFoldable.html"><img src="images/s5.png"></a>
            <div class="head1">Furniture</div>
        </div>
-       <div class="box" data-aos="fade-up">
+       <div class="box">
           <a href="SerFoyerDesign.html"><img src="images/s6.png"></a>
          <div class="head1">Foyer Design</div>
        </div>
-       <div class="box" data-aos="fade-up">
+       <div class="box">
         <a href="SerBathroom.html"><img src="images/s7.png"></a>
           <div class="head1">Bathroom</div> </div>
        
-       <div class="box" data-aos="fade-up">
+       <div class="box">
         <a href="SerWardrobe.html"><img src="images/s8.png"></a>
           <div class="head1">Wardrobe</div> 
        </div>
@@ -205,10 +205,8 @@
           <li><a href="SerBedroom.html">Bedroom</a></li>
           <li><a href="SerStudyUnit.html">Study Unit</a></li>
           <li><a href="SerWardrobe.html">Wardrobe</a></li>
-          <li><a href="SerFoyerDesign.html">Foyer Design</a></li>
-					<li><a href="SerBathroom.html">Bathroom</a></li>
-          <li><a href="SerFoldable.html">Foldable Furniture</a></li>
-        </ul>
+          <li><a href="SerBathroom.html">Bathroom</a></li>
+          </ul>
       </div>
       <div class="footer-col">
         <h4>CONTACT INFO</h4>
@@ -233,67 +231,6 @@
  <p class="copyright">Copyright © 2021 Home Decor. All Rights Reserved.</p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  var slideIndex = 0;
-
-showSlide();
-
-// var timer = setInterval(showSlide, 2000);
-
-var slideContainer = document.getElementById('slideshow-container');
-var slideControl = document.getElementById('slide-control');
-
-slideContainer.onmouseover = function() {
-	clearInterval(timer);
-}
-
-slideControl.onmouseover = function() {
-	clearInterval(timer);
-}
-
-slideContainer.onmouseleave = function() {
-	timer = setInterval(showSlide, 2000);
-}
-
-slideControl.onmouseleave = function() {
-	timer = setInterval(showSlide, 2000);
-}
-
-function showSlide() {
-	var i;
-	var slides = document.getElementsByClassName('slide-item');
-	var dots = document.getElementsByClassName('dot');
-	for (var i = 0; i < slides.length; i++) {
-		slides[i].style.display = 'none';
-	}
-	for (var i = 0; i < dots.length; i++) {
-		dots[i].className = dots[i].className.replace(" active", "");
-	}
-	slideIndex++;
-	if (slideIndex > slides.length) slideIndex = 1;
-	slides[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className += " active";
-}
-
-function chooseSlide(n) {
-	slideIndex = n;
-	showSlide();
-	clearInterval(timer);
-}
-
-function showMenu() {
-	var topNav = document.getElementById('topnav');
-	if (topNav.className === "navbar") {
-		topNav.className += " show";
-	} else {
-		topNav.className = "navbar";
-	}
-    AOS.init({
-      offset:400,
-      duration:1000
-    });}
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

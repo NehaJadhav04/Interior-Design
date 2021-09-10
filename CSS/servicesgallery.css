@@ -19,6 +19,7 @@ font-family: 'Poppins', sans-serif;
 }
 body{
 padding: 10px;
+font-family: Georgia;
 }
 .gallery{
 display: flex;

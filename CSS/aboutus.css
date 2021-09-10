@@ -12,7 +12,7 @@
   }
     
 body, html {
-	font-family: sans-serif;
+	font-family: Georgia;
 	margin: 0;
 	height: 100%;
 }
@@ -297,7 +297,7 @@ nav{
 	font-style: bold;
   }
   .services .box-container .box p{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color:red;
 	padding:1rem 0;
   }
@@ -499,6 +499,7 @@ nav{
 .footer {
 	background-color: #24262b;
 	padding: 20px 0;
+	border-bottom: 1px solid white;
 }
 .footer-col {
 	width: 25%;
