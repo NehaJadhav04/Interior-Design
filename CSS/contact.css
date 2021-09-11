@@ -11,11 +11,7 @@
 	margin:50px auto;
 	margin-bottom:-10px;
   }
-  body
-  {
-      font-family: Georgia;
-  }
-  nav{
+ nav{
 	background-color:black;
 }
 .navbar {
@@ -121,7 +117,7 @@
     margin: 0;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family:Georgia;
     line-height: 1.5;
 }
 nav{
@@ -358,6 +354,7 @@ h1{
 }
 .contact-section .copyright
 {
+    font-size: 18px;
     width: 100%;
     background: #181818;
     padding: 8px;
