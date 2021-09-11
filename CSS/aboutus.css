@@ -35,12 +35,12 @@ body, html {
 	margin:-25px auto;
 	margin-bottom:20px;
   }
-nav{
+  nav{
 	background-color:black;
 }
 .navbar {
 	background-color:black;
-	padding: 10px 10px;
+	padding: 9px 9px;
 	padding-right: 30px;
 	padding-left: 80px;
 	position: fixed;
@@ -52,29 +52,29 @@ nav{
 	z-index: 99;
 }
 
-.navbar .menu a {
+.navbar a {
 	float: left;
 	color: var(--white);
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 19px;
 	font-weight: bold;
 	line-height: 25px;
-	padding: 12px;
-	margin-left: 10px;
+	padding: 13px;
 }
 .fa-home
 {
 	font-size: 40px;
 }
 .navbar .logo {
-    text-decoration: none;
-	color: white;
+	margin-top: -2px;
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-right: 480px;
+	margin-right: 0px;
+	margin-left: 120px;
+	color: white;
 }
 
 .navbar-right a:hover {
@@ -90,7 +90,7 @@ nav{
 }
 
 .navbar-right {
-	float: right;
+	align-items: center;
 }
 
 .navbar .icon {
@@ -99,7 +99,7 @@ nav{
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
 	.navbar {
 		padding: 10px;
 	}
@@ -107,16 +107,15 @@ nav{
 	.navbar .menu {
 		display: none;
 	}
-	.navbar .logo {
-		margin-right: 20px;
-	}
-	
+
 	.navbar .icon {
-		color:white;
 		display: block;
 		position: absolute;
-		top: 20px;
+		top: 12px;
 		right: 13px;
+	}
+	.navbar .logo {
+	margin-left:0px;
 	}
 
 	.navbar.show {
@@ -131,6 +130,8 @@ nav{
 	.navbar.show .menu a {
 		width: 100%;
 	}
+
+
 }
 .about{
 	margin-top: 100px;
