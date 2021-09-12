@@ -11,12 +11,20 @@ body, html {
 	margin: 0;
 	height: 100%;
 }
+.border1{
+	width: 160px;
+	height: 5px;
+	background:red;
+	margin:-25px auto;
+	margin-bottom:20px;
+	}
+  
 .heading{
     font-size: 50px;
     margin-top: 120px;
     text-align: center;
     text-transform: uppercase;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 .container-fluid {
 	position: relative;

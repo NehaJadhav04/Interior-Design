@@ -17,7 +17,8 @@
         font-size: 50px;
         text-align: center;
         margin-bottom: 40px;
-    }.border{
+    }
+    .border{
       width: 160px;
       height: 5px;
       background:red;
